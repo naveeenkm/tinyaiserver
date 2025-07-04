@@ -127,7 +127,7 @@ Tiny.ai Team
     send_mail(
         subject=subject,
         message=message,
-        from_email="naveenkm.techmiya@gmail.com",
+        from_email="kmnaveen432@gmail.com",
         recipient_list=[email]
     )
 
