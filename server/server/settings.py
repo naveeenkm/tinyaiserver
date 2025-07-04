@@ -28,7 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    '192.168.0.159',  # 👈 your laptop's local IP
+    '192.168.0.159',
+    'tinyaiserver.onrender.com',
+    'https://tinyai-v1.vercel.app/'# 👈 your laptop's local IP
 ]
 
 
