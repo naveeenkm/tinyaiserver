@@ -110,7 +110,7 @@ def send_reset_link(request):
     })
     email_name = user.get("name", email.split("@")[0].rstrip("0123456789") or "User")
     user_name = user.get("name", email_name)
-    subject = "Techmiya.ai - Password Reset Request"
+    subject = "Tiny.ai - Password Reset Request"
     reset_link = f"{settings.FRONTEND_BASE_URL}/#/reset-password/{token}"
     message = f"""
 Hi {user_name or 'there'},
@@ -122,7 +122,7 @@ We received a request to reset your password. Please click the link below to set
 Note: This link is valid for 4 minutes. If you did not request a password reset, please ignore this email.
 
 Best regards,  
-Techmiya.ai Team
+Tiny.ai Team
 """
     send_mail(
         subject=subject,
