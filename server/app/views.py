@@ -111,7 +111,7 @@ def send_reset_link(request):
     email_name = user.get("name", email.split("@")[0].rstrip("0123456789") or "User")
     user_name = user.get("name", email_name)
     subject = "Techmiya.ai - Password Reset Request"
-    reset_link = f"{settings.FRONTEND_BASE_URL}/reset-password/{token}"
+    reset_link = f"{settings.FRONTEND_BASE_URL}/#/reset-password/{token}"
     message = f"""
 Hi {user_name or 'there'},
 
